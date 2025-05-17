@@ -7,8 +7,8 @@ export class Timeout {
     }
 
     private _startedAt: number;
-    private _callbacks: (() => void)[];
-    private _rejecters: (() => void)[];
+    private _callbacks: (() => void)[] = [];
+    private _rejecters: (() => void)[] = [];
     private _timeLeft: number;
     private _timerId: any; // not possible in any other way
 
